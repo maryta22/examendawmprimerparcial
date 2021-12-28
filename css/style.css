@@ -1,0 +1,91 @@
+/*
+  Selector: body
+  Estilo: Sin margen ni relleno 
+*/
+body{
+  padding: 0%;
+  margin: 0%;
+}
+
+/* 
+  Selector: elemento UL, que se encuentra dentro del elemento NAV
+  Estilo:
+    Posicionamiento: Grid
+    Plantilla de columnas: 5 columnas de 18%
+    Justificación del contenido: con espacio en medio 
+*/
+
+nav ul{
+  display: grid;
+  grid-template-columns: repeat(5, 18%);
+  justify-items: center;
+}
+
+/* 
+  Estilo:
+    Estilo de lista: ninguno (no debe aparecer la viñeta)
+    Relleno arriba: 10%
+*/
+
+li {
+  list-style-type: none;
+  padding-top: 10%;
+}
+
+/* 
+  Estilo:
+    Posicionamiento: flex
+    Dirección: columna
+*/
+
+li {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+  Selector: elemento SPAN (primer hijo), dentro del elemento UL, dentro del elemento NAV
+  Estilo:
+    Color de texto: blanco
+    Texto: centrado 
+    Tamaño de la fuente: 1.2rem
+    Grosor de la fuente: negrita
+*/
+
+nav ul span:first-child{
+  color: white;
+}
+
+
+/* 
+  Selector AVANZADO: elemento SPAN cuyo atributo class se igual a "more"
+  Estilo:
+    Color de fondo: rgba(135, 142, 150,.2)
+*/
+
+span[class="more"]{
+  background-color: rgba(135, 142, 150,.2);
+}
+
+/* 
+  Selector: Al pasar el mouse por encima
+  Estilo:
+    Color de fondo:  rgba(255, 255, 255,.5)
+    Cursor: puntero
+*/
+
+span[class="more"]:hover{
+  background-color: rgba(255, 255, 255,.5) ;
+  cursor:pointer;
+}
+
+/* 
+  Selector: elemeto SPAN, hijo del elemento LI, hijo del elemento UL, hijo del elemento NAV
+  Estilo:
+    Alineación del texto: centrado
+*/
+
+nav ul li span{
+  text-align: center;
+}
+
